@@ -1,9 +1,15 @@
 import React from 'react';
+import './Filter.scss';
 
 const Filter = ({ value, onChange }) => (
-  <label>
+  <label className="Filter">
     Find contacts by name
-    <input type="text" value={value} onChange={onChange} />
+    <input
+      className="Filter__textarea"
+      type="text"
+      value={value}
+      onChange={onChange}
+    />
   </label>
 );
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { AddContact } from 'components/AddContact';
+import './ContactForm.scss';
 
 class ContactForm extends Component {
   state = {
@@ -27,10 +28,11 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form className="ContactForm" onSubmit={this.handleSubmit}>
         <label>
           Name
           <input
+            className="ContactForm__textarea"
             type="text"
             name="name"
             pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -43,6 +45,7 @@ class ContactForm extends Component {
         <label>
           Number
           <input
+            className="ContactForm__textarea"
             type="tel"
             name="number"
             pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"

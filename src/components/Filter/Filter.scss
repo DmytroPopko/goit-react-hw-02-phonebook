@@ -1,0 +1,14 @@
+@import 'styles/shared.scss';
+
+.Filter {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  // padding: 16px;
+  margin-bottom: 20px;
+}
+
+.Filter__textarea {
+  margin-top: 10px
+ }
+
